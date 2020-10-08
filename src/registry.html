@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    section {
+        width: 788px;
+        margin: 0 auto;
+        padding-top: 146px;
+    }
+    
+    .top {
+        margin-bottom: 16px;
+    }
+    
+    .top img {
+        width: 152px;
+    }
+    
+    .top span {
+        float: right;
+        color: #777777;
+        font-size: 14px;
+    }
+    
+    .box {
+        box-shadow: 0 5px 20px 0 #ebebeb;
+    }
+    
+    .box .nei {
+        width: 320px;
+        padding: 64px 0 40px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .box .nei p {
+        line-height: 50px;
+    }
+    
+    .box .nei p:last-child input {
+        border: 0px;
+        width: 100%;
+        background: yellowgreen;
+        line-height: 50px;
+        color: white;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="top">
+            <a href="./index1.html"><img src="//assets.shop.hisense.com/assets/images/other-images/hisense_logo-eeb25b.png" alt=""></a>
+            <span><a href="./login.html" > 已有账户？直接登录</a></span></div>
+        <div class="box">
+            <div class="nei">
+                <h3>注册海信账户</h3>
+                <form action="success.html" method="POST" id="registry">
+                    <!-- action:递交的地址  method:提交方法 -->
+                    <p>用户姓名：<input type="text" class="username"><span></span></p>
+                    <p>手机号码：<input type="text" class="telphone"><span></span></p>
+                    <p>电子邮箱：<input type="text" class="email"><span></span></p>
+                    <p>身份证号：<input type="text" class="cartid"><span></span></p>
+                    <p>用户密码：<input type="text" class="password"><span></span></p>
+                    <p><input type="submit" value="提交注册"></p>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

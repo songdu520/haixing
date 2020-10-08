@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    section {
+        background-image: url(//img.shop.hisense.com/2020/08/20/4c619699-b283-4e5a-bbd3-7276b45571eb.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    section .box {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: right;
+    }
+    
+    section .box .main {
+        display: inline-block;
+        width: 384px;
+        background: #ffffff;
+        display: inline-block;
+        margin: 70px 0 50px 0;
+        height: 560px;
+        padding: 20px 48px 0 48px;
+        text-align: center;
+        line-height: 64px;
+        font-size: 18px;
+    }
+    
+    .main h2 {
+        color: #00aaa6;
+        line-height: 64px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .main form {
+        margin-top: 60px;
+    }
+    
+    .main form p:last-child {
+        margin-top: 60px;
+    }
+    
+    form p:last-child input {
+        border: 0px;
+        width: 100%;
+        background: yellowgreen;
+        line-height: 50px;
+        color: white;
+    }
+</style>
+
+<body>
+    <section>
+        <div class="box">
+            <div class="main">
+                <h2>用户登录</h2>
+                <form action="success.html" method="POST" id="registry">
+                    <!-- action:递交的地址  method:提交方法 -->
+                    <p>账号：<input type="text" class="username"><span></span></p>
+                    <p>密码：<input type="text" class="password"><span></span></p>
+                    <p><input type="submit" value="立即登录"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -27,6 +27,88 @@ body {
   font: 16px "微软雅黑";
 }
 
+body {
+  background: #f7f7f7;
+}
+
+i,
+em,
+b,
+strong {
+  font-style: normal;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 1188px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+select,
+input,
+textarea,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px "微软雅黑";
+}
+
+body {
+  background: #f7f7f7;
+}
+
 i,
 em,
 b,
@@ -74,6 +156,7 @@ select {
 }
 
 header {
+  background: #ffffff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   position: relative;
 }
@@ -237,12 +320,12 @@ header {
 }
 .fool-1 h3 {
   font-size: 28px;
+  padding-bottom: 30px;
 }
 .fool-1 section {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
 }
 .fool-1 section div img {
   width: 100%;
@@ -279,9 +362,9 @@ header {
 }
 .fool-2 h3 {
   font-size: 28px;
+  padding-bottom: 30px;
 }
 .fool-2 div {
-  margin-top: 30px;
   width: 100%;
   height: 481px;
   overflow: hidden;
@@ -291,6 +374,81 @@ header {
 }
 .fool-2 div img:hover {
   transform: scale(1.1);
+}
+
+.fool-3 {
+  padding-top: 60px;
+}
+.fool-3 h3 {
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+.fool-3 .pic {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+.fool-3 .pic .pic1 {
+  background: greenyellow;
+  width: 593px;
+  height: 100%;
+  overflow: hidden;
+}
+.fool-3 .pic .pic1 img {
+  transition: all 1s;
+}
+.fool-3 .pic .pic1 img:hover {
+  transform: scale(1.1);
+}
+.fool-3 .pic .pic1 img {
+  height: 100%;
+  width: 593px;
+}
+.fool-3 .pic .pic2 div {
+  width: 593px;
+  height: 300px;
+  overflow: hidden;
+}
+.fool-3 .pic .pic2 div img {
+  transition: all 1s;
+}
+.fool-3 .pic .pic2 div img:hover {
+  transform: scale(1.1);
+}
+.fool-3 .pic .pic2 img {
+  height: 300px;
+}
+.fool-3 ul {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.fool-3 ul li {
+  background: #fff;
+  width: 272px;
+  padding: 8px;
+}
+.fool-3 ul li a {
+  color: #000;
+  text-align: center;
+  line-height: 20px;
+}
+.fool-3 ul li img {
+  height: 272px;
+  width: 272px;
+}
+.fool-3 ul li h5 {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fool-3 ul li .item {
+  color: #cccccc;
+  line-height: 24px;
+}
+.fool-3 ul li .price {
+  color: #cc0010;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,3 +1,5 @@
+@charset "utf-8";
+@import "reset";
 //二级效果混合
 @mixin twoshow( $top:36px, $left:50%, $margin-left:-71px, $z-index:100) {
     position: absolute;
@@ -10,6 +12,7 @@
 }
 
 header {
+    background: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .15);
     position: relative;
 }
