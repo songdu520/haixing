@@ -1,0 +1,80 @@
+// 幻灯片
+.banner {
+    height: 500px;
+    width: 2526px;
+    margin: 0 auto;
+    a {
+        display: inline-block;
+        img {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+//海信官网
+@mixin foolsyle {
+    padding-top: 60px;
+    h3 {
+        font-size: 28px;
+    }
+    ;
+}
+
+.fool-1 {
+    @include foolsyle();
+    section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        div {
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            &:nth-child(1) {
+                width: 588px;
+                height: 296px;
+            }
+            &:nth-child(2) {
+                width: 294px;
+                height: 296px;
+            }
+            &:nth-child(3) {
+                width: 294px;
+                height: 296px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .one {
+                    height: 145px;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .two {
+                    height: 145px;
+                }
+            }
+        }
+    }
+}
+
+.fool-2 {
+    @include foolsyle();
+    div {
+        margin-top: 30px;
+        width: 100%;
+        height: 481px;
+        overflow: hidden;
+        img {
+            transition: all 1s;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+}

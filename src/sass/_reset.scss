@@ -1,0 +1,73 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+select,
+input,
+textarea,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 16px "微软雅黑";
+}
+
+i,
+em,
+b,
+strong {
+    font-style: normal;
+    font-weight: normal;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    width: 1188px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+}
