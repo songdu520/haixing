@@ -303,16 +303,52 @@ header {
 
 .banner {
   height: 500px;
-  width: 2526px;
+  width: 1920px;
   margin: 0 auto;
+  position: relative;
 }
-.banner a {
-  display: inline-block;
+.banner ul li {
+  opacity: 0;
 }
-.banner a img {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+.banner ol {
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+}
+.banner ol li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  text-indent: -999em;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.banner ol .active {
+  background: white;
+  border: #fff 3px solid;
+}
+
+.lunbo {
+  position: relative;
+}
+.lunbo a {
+  background: rgba(0, 0, 0, 0.2);
+}
+.lunbo #left,
+.lunbo #right {
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  color: #fff;
+  display: none;
+}
+.lunbo #left {
+  left: 0;
+}
+.lunbo #right {
+  right: 0;
 }
 
 .fool-1 {

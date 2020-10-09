@@ -1,15 +1,53 @@
 // 幻灯片
 .banner {
     height: 500px;
-    width: 2526px;
+    width: 1920px;
     margin: 0 auto;
-    a {
-        display: inline-block;
-        img {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
+    position: relative;
+    ul {
+        li {
+            opacity: 0;
         }
+    }
+    ol {
+        position: absolute;
+        left: 50px;
+        bottom: 20px;
+        li {
+            float: left;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ccc;
+            text-indent: -999em;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .active {
+            background: rgba($color: #fff, $alpha: 1);
+            border: #fff 3px solid;
+        }
+    }
+}
+
+.lunbo {
+    position: relative;
+    a {
+        background: rgba($color: #000000, $alpha: .2);
+    }
+    #left,
+    #right {
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        color: #fff;
+        display: none;
+    }
+    #left {
+        left: 0;
+    }
+    #right {
+        right: 0;
     }
 }
 
