@@ -49,7 +49,7 @@
             <h1>
                 <a href="https://www.hisense.com/"><img src="//img.shop.hisense.com/2019/05/09/11248a1c-3f61-4e84-8963-7d7d6761a99c.png" alt=""></a>
             </h1>
-            <ul class="">
+            <ul>
                 <li><a href="javascript:;">官网</a></li>
                 <li><a href="javascript:;">国货品质节</a></li>
                 <li><a href="javascript:;">电视</a>
@@ -276,7 +276,19 @@
 
             </ul>
             <!-- 搜索框 -->
-            <div class="search"><span class="iconfont iconfangdajing"></span></div>
+            <div class="search">
+                <span class=" icon1 iconfont iconfangdajing"></span>
+                <div class="searchF">
+                    <span class="icon2 iconfont iconfangdajing"></span>
+                    <input type="text" name="q" placeholder="嗨森嘉年华 10.10-10.16 百万津贴礼赠海信用户">
+                    <button><span class="iconfont iconfenye-xiayiye "></span>
+                    </button>
+                    <ol>
+
+                    </ol>
+
+                </div>
+            </div>
         </div>
     </header>
 
@@ -448,9 +460,99 @@
         </ul>
     </section>
     <footer>
+        <section class="wrapper">
+            <ul class="imgContent">
+                <li><img src="//img.shop.hisense.com/2020/03/11/aa77b712-aa12-4822-ad14-97a8aa20a381.png" alt=""></li>
+                <li><img src="//img.shop.hisense.com/2020/03/11/cbdd09c3-0f13-49ed-a6a3-75e0008e997d.png" alt=""></li>
+                <li><img src="//img.shop.hisense.com/2020/03/11/2d850478-5a51-4724-a54f-d64ddff0a1cc.png" alt=""></li>
+                <li><img src="//img.shop.hisense.com/2020/03/11/21f0013e-2220-45fb-9dc7-b9eae8936ffd.png" alt=""></li>
+            </ul>
+            <div class="textContent">
+                <ul>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                </ul>
+                <ul>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
 
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                </ul>
+                <ul>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                </ul>
+                <ul>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+
+                </ul>
+                <ul>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+
+                </ul>
+                <ul>
+
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                    <li>企业简介</li>
+                </ul>
+                <div>
+                    <p> 4006-111-111
+                    </p>
+                    <span>
+                    周一至周日 24小时 
+                      </span>
+                    <img src="//img.shop.hisense.com/2018/11/02/c9a48d65-8e01-4687-803b-53e95aa910fd.png" alt="">
+                    <span>
+                        扫一扫，免费送延保+会员积分 
+                     </span>
+                </div>
+
+
+
+            </div>
+
+        </section>
     </footer>
 
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    function taobao(data) {
+        console.log(data)
+        let strhtml = ''
+        $.each(data.result, function(index, value) {
+            strhtml += `
+           <li>${value[0]}</li>`
+        })
+        $('.searchF ol').html(strhtml)
+
+    };
+
+    $('.searchF input').on('change', function() {
+        if ($('#sc')) {
+            $('#sc').remove()
+        }
+        let cS = document.createElement('script');
+        cS.src = 'https://suggest.taobao.com/sug?code=utf-8&q=' + $('.searchF input').val() + '&_ksTS=1600326651998_256&callback=taobao';
+        cS.id = 'cs';
+        document.body.appendChild(cS);
+    })
+</script>
 
 </html>
