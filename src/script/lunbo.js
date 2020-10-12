@@ -2,6 +2,29 @@
 
 define([], function() {
     return {
+        // 顶部悬浮
+        right_nav: ! function() {
+            $(' .goTop').on('click', function() {
+
+                $('html').animate({
+                    scrollTop: 0
+                })
+            })
+        }(),
+        move_nav: ! function() {
+            $(window).on('scroll', function() {
+
+                if ($(window).scrollTop() >= 600) {
+                    $('.move_nav2').css({
+                        top: 0
+                    })
+                } else {
+                    $('.move_nav2').css({
+                        top: -75
+                    })
+                }
+            })
+        }(),
         //  搜索条
         search: ! function() {
             $('.icon1').on('click', function() {
@@ -14,7 +37,7 @@ define([], function() {
 
 
             })
-            $('button').on('click', function() {
+            $('.searchF button').on('click', function() {
 
                 $(".nav2 ul").show()
                 $(this).hide()
@@ -104,7 +127,7 @@ define([], function() {
                 url: "http://192.168.11.65//h5/umyjs/taobaoitem_test/php/list.php",
                 dataType: 'json'
             }).done(function(data) {
-                console.log(data)
+
                 let strhtml = ''
                 $.each(data, function(index, value) {
                     strhtml += `
@@ -127,6 +150,7 @@ define([], function() {
 
                     $("img.lazy").lazyload({
                         effect: "fadeIn"
+
                     })
 
                 })
