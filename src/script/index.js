@@ -18,7 +18,8 @@ require.config({
     }
 })
 require(['jquery', 'jq_cookie', 'jq_lazyload'], function() {
-    require(['lunbo']);
+    require(['lunbo'])
     require(['list'])
     require(['detail'])
+    require(['cart'])
 })
